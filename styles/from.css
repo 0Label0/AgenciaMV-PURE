@@ -1,0 +1,130 @@
+/* =======================
+   Form Container
+======================= */
+.container-form {
+  margin-top: 50px;
+  padding-block: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =======================
+   Form
+======================= */
+.container-form .form {
+  box-shadow: 5px 10px 10px black;
+  margin-block: 90px;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--secondary-background);
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  justify-content: center;
+}
+
+@media (max-width: var(--media-query-movile)) {
+  .container-form .form {
+    width: 350px;
+    max-width: 400px;
+  }
+}
+
+/* Section Form */
+.container-form .form .section-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: var(--media-query-movile)) {
+  .container-form .form .section-form {
+    flex-direction: column;
+  }
+}
+
+/* Input Container */
+.container-form .form .section-form .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-form .form .section-form .input-container label {
+  margin-left: 3px;
+  margin-top: 5px;
+  font-size: larger;
+}
+
+.container-form .form .section-form .input-container input {
+  margin-inline: 3px;
+  min-height: 45px;
+  font-size: large;
+  padding-left: 4px;
+  border-radius: 5px;
+}
+
+.container-form .form .section-form .input-container textarea {
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-inline: 3px;
+}
+
+/* Submit Button */
+.container-form .form #submit {
+  height: 45px;
+  border: none;
+  background-color: rgb(255, 249, 127);
+  font-size: larger;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.container-form .form #submit:hover {
+  background-color: rgb(255, 177, 162);
+}
+
+/* =======================
+   Title Container
+======================= */
+.container-form .title-container {
+  width: 100%;
+  background: var(--secondary-background);
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.container-form .title-container h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 6em;
+  color: var(--color-white);
+}
+
+@media (max-width: var(--media-query-movile)) {
+  .container-form .title-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.container-form .title-container p {
+  color: var(--color-white);
+  font-size: 1.3rem;
+}
+
+/* h3 general */
+.container-form h3 {
+  font-size: 2em;
+  margin-bottom: 0;
+}

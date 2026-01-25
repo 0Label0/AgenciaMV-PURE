@@ -1,0 +1,46 @@
+:root {
+  /* =======================
+     Colors
+  ======================= */
+
+  --subtitle-color: #f9f9f99b;
+  --lima: rgb(141, 242, 18);
+  --ligth-lima: rgb(183, 253, 97);
+  --color-white: #f6f6f6;
+  --general-background: linear-gradient(90deg, #0b3e27, #197149);
+  --secondary-background: linear-gradient(94deg, #002d3f, #004e60);
+  --formal-blue: #0b9aa7;
+  --formal-granate: #eb7488;
+  --formal-green: #197149;
+  --formal-white: #e1e1e1;
+  --formal-black: #0c0c0c;
+
+  --primary-green: #2e7d32;
+  --secondary-green: #4caf50;
+  --dark-green: #1b5e20;
+  --light-green: #e8f5e9;
+  --accent-green: #66bb6a;
+  --text-dark: #1a1a1a;
+  --text-light: #f5f5f5;
+  --bg-white: #ffffff;
+
+  /* =======================
+     Effects
+  ======================= */
+
+  --transition: all 0.3s ease;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  /* =======================
+     Fonts
+  ======================= */
+
+  --common-font-size: 1.2rem;
+
+  /* =======================
+     Media queries
+  ======================= */
+
+  --media-query-movile: 820px;
+  --media-query-mid-screen: 1000px;
+}

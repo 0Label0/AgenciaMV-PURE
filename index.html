@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgenciaMV | Bienvenida</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/welcome.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./js/mods/splide-skyblue.min.css" />
+  </head>
+  <body>
+    <app-header
+      link_index="#"
+      link_services="./templates/services.html"
+      link_contact="./templates/contact.html"
+    ></app-header>
+
+    <main>
+      <header class="header-welcome">
+        <video
+          src="./assets/videos/background-video.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source />
+        </video>
+
+        <div>
+          <h1>
+            <span class="reveal-left">M</span>
+            <div>
+              <div class="reveal-top">&nbsp; &nbsp; SOMOS</div>
+              <div class="reveal-right">ARKETING</div>
+            </div>
+          </h1>
+          <h4>VENDEMOS RESULTADOS</h4>
+          <a class="tp-contact" href="./templates/contact.html"
+            >CONTACTA CON NOSOTROS</a
+          >
+        </div>
+        <a class="tp-works" href="#works"><span>↓</span>Scroll</a>
+      </header>
+
+      <section class="how-works-container" id="works">
+        <h2 class="reveal-top">CÓMO TRABAJAMOS</h2>
+        <div class="carousel-container"></div>
+      </section>
+
+      <section>
+        <app-carousel></app-carousel>
+      </section>
+    </main>
+
+    <app-footer
+      link_index="#"
+      link_services="./templates/services.html"
+      link_contact="./templates/contact.html"
+    ></app-footer>
+
+    <script src="./js/mods/scrollreveal.min.js"></script>
+    <script src="./js/mods/splide.min.js"></script>
+    <!-- Module Script -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
