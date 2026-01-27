@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/welcome.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
     <link rel="stylesheet" href="./js/mods/splide-skyblue.min.css" />
   </head>
   <body>
@@ -52,8 +53,101 @@
         <div class="carousel-container"></div>
       </section>
 
-      <section>
-        <app-carousel></app-carousel>
+      <section class="services-container">
+        <h2 class="title">SERVICIOS</h2>
+
+        <div class="services splide" id="services">
+          <div class="card-container splide__track no-select">
+            <div class="splide__list">
+              <article
+                class="card type-1 splide__slide"
+                id="estrategia-comercial"
+              >
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>
+                    ESTRATEGIA <br />
+                    COMERCIAL
+                  </h3>
+                  <p>ESTUDIAMOS TU CICLO DE VENTAS</p>
+                  <a href="./services/#estrategia-comercial" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="card type-2 splide__slide" id="branding">
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>BRANDING</h3>
+                  <p>CONSTRUIMOS TU MARCA</p>
+                  <a href="./services/#branding" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="card type-3 splide__slide" id="redes-sociales">
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>REDES SOCIALES</h3>
+                  <p>DA A CONOCER TU MARCA</p>
+                  <a href="./services/#redes-sociales" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="card type-1 splide__slide" id="pagina-web">
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>PÁGINA WEB</h3>
+                  <p>LA CARTA DE PRESENTACIÓN</p>
+                  <a href="./services/#pagina-web" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="card type-3 splide__slide" id="posicionamiento">
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>POSICIONAMIENTO</h3>
+                  <p>NO SIRVE CON ESTAR, HAY QUE DESTACAR</p>
+                  <a href="./services/#posicionamiento" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+
+              <article
+                class="card type-2 splide__slide"
+                id="desarrollo-negocio"
+              >
+                <div class="arrow-card">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                  <h3>DESARROLLO DEL NEGOCIO</h3>
+                  <p>¿QUÉ QUIERES HACER CON TU NEGOCIO?</p>
+                  <a href="./services/#desarrollo-negocio" class="btn-card">
+                    <span>SABER MÁS</span> <span class="arrow"> &gt; </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -65,6 +159,7 @@
 
     <script src="./js/mods/scrollreveal.min.js"></script>
     <script src="./js/mods/splide.min.js"></script>
+    <script src="./js/scripts/carousel.js"></script>
     <!-- Module Script -->
     <script type="module" src="./js/main.js"></script>
   </body>

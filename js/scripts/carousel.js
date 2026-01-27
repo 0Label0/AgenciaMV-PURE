@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const el = document.getElementById('services');
-  if (!el || el.classList.contains('is-initialized')) return;
+document.addEventListener("DOMContentLoaded", () => {
+  const el = document.getElementById("services");
+  if (!el || el.classList.contains("is-initialized")) return;
 
   new Splide(el, {
-    type: 'loop',
+    type: "loop",
     perPage: 1,
     perMove: 1,
-    gap: 80,              // px, no rem
+    gap: 80, // px, no rem
     pagination: true,
     drag: true,
     pauseOnHover: true,
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     flickPower: 100,
     breakpoints: {
       768: {
-        focus: 'center',
+        focus: "center",
       },
     },
   }).mount();
