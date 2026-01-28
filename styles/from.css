@@ -92,7 +92,7 @@
 }
 
 .container-form .form #submit:hover {
-  background-color: rgb(255, 177, 162);
+  background-color: rgb(163, 255, 162);
 }
 
 /* =======================
@@ -127,4 +127,8 @@
 .container-form h3 {
   font-size: 2em;
   margin-bottom: 0;
+}
+
+.error-message {
+  color: rgb(215, 98, 98);
 }

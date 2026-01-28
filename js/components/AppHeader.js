@@ -7,10 +7,11 @@ class AppHeader extends HTMLElement {
     this.link_index = "./index.html";
     this.link_services = "./templates/services.html";
     this.link_contact = "./templates/contact.html";
+    this.file = "index";
   }
 
   static get observedAttributes() {
-    return ["link_index", "link_services", "link_contact"];
+    return ["link_index", "link_services", "link_contact", "file"];
   }
   attributeChangedCallback(routes, oldValue, newValue) {
     if (oldValue === newValue) return;
@@ -121,8 +122,13 @@ class AppHeader extends HTMLElement {
 
         .link-menu .btn-contact:hover { --grad-pos: 100%; }
 
-        .link-menu a { color: inherit; text-decoration: none; }
-        .link-menu a:hover { text-decoration: underline; text-underline-offset: 5px; }
+        .link-menu a { text-decoration: none; transition: 0.2s ease }
+        .link-menu a:hover { text-decoration: underline; text-underline-offset: 5px; color: #fff; }
+
+        .link-white { color: rgba(214, 214, 214, 0.806);  }
+
+        .link-secondary {   color: #fff;  }
+
 
         /* Mobile menu */
         @media (max-width: 768px) {
@@ -167,10 +173,10 @@ class AppHeader extends HTMLElement {
       <header class="general-menu">
         <h2 style="margin:0">AGENCIA MV</h2>
         <nav class="link-menu">
-          <a href="${this.link_index}">Bienvenida</a>
-          <a href="${this.link_services}">Servicios</a>
-          <a href="${this.link_contact}">Contáctanos</a>
-          <a class="btn-contact">999-33-44-22</a>
+          <a class="${this.file === "index" ? "link-secondary" : "link-white"}" href="${this.link_index}">Bienvenida</a>
+          <a class="${this.file === "services" ? "link-secondary" : "link-white"}" href="${this.link_services}">Servicios</a>
+          <a class="${this.file === "contact" ? "link-secondary" : "link-white"}" href="${this.link_contact}">Contáctanos</a>
+          <button class="btn-contact">999-33-44-22</button>
         </nav>
         <div class="burger-menu">
           <div id="burger-up" class="burger"></div>

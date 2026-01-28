@@ -6,7 +6,6 @@
     <title>AgenciaMV · Contacto</title>
     <!-- Global Styles -->
     <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="stylesheet" href="../styles/contact.css" />
     <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/from.css" />
   </head>
@@ -15,6 +14,7 @@
       link_index="../index.html"
       link_services="./services.html"
       link_contact="#"
+      file="contact"
     ></app-header>
 
     <main>
@@ -29,54 +29,61 @@
           enctype="application/x-www-form-urlencoded"
           method="POST"
           name="from-contact"
-          action=""
+          id="contact-form"
         >
           <h3>FORMULARIO DE CONTACTO</h3>
           <div class="section-form">
             <div class="input-container">
               <label for="name">Nombre</label>
-              <input id="name" name="name" type="text" />
+              <input id="name" name="name" type="text" required />
+              <span class="error-message" id="error-name"></span>
             </div>
             <div class="input-container">
               <label for="lastname">Apellidos</label>
-              <input id="lastname" name="lastname" type="text" />
+              <input id="lastname" name="lastname" type="text" required />
+              <span class="error-message" id="error-lastname"></span>
             </div>
           </div>
           <div class="section-form">
             <div class="input-container">
               <label for="company">Empresa (Opcional)</label>
               <input id="company" name="company" type="text" />
+              <span class="error-message" id="error-company"></span>
             </div>
           </div>
           <div class="section-form">
             <div class="input-container">
               <label for="cargo">Cargo en la empresa</label>
               <input id="cargo" name="cargo" type="text" />
+              <span class="error-message" id="error-cargo"></span>
             </div>
 
             <div class="input-container">
               <label for="tel">Teléfono</label>
-              <input id="tel" name="tel" type="text" />
+              <input id="tel" name="tel" type="text" required />
+              <span class="error-message" id="error-tel"></span>
             </div>
 
             <div class="input-container">
               <label for="email">Mail</label>
-              <input id="email" type="text" name="email" />
+              <input id="email" type="text" name="email" required />
+              <span class="error-message" id="error-email"></span>
             </div>
           </div>
           <div class="section-form">
             <div class="input-container">
               <label for="message">Mensaje</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea required id="message" name="message"></textarea>
+              <span class="error-message" id="error-message"></span>
             </div>
           </div>
-          <div class="consent">
+          <!-- <div class="consent">
             <input type="checkbox" id="consent" name="check-box" />
             <label for="consent">
               He leído y acepto <strong>las políticas de privacidad</strong> y
               el <strong>aviso legal</strong>
             </label>
-          </div>
+          </div> -->
           <div class="section-form">
             <button type="submit" id="submit">Solicitar más información</button>
           </div>
@@ -91,6 +98,7 @@
     ></app-footer>
 
     <script src="../js/mods/scrollreveal.min.js"></script>
+    <script src="../js/apiMail.js"></script>
     <!-- Module Script -->
     <script type="module" src="../js/main.js"></script>
   </body>
